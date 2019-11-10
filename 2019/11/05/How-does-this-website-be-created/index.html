@@ -261,6 +261,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
         </div>
           
@@ -391,6 +392,24 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: 'f772b5b4f4a66eae8668',
+      clientSecret: 'f772b5b4f4a66eae8668f772b5b4f4a66eae8668',
+      repo: 'leoliumingjun.github.io',
+      owner: 'LeoLiuMingJun',
+      admin: ['LeoLiuMingJun'],
+      id: '82c6c828155c8fa752e25926e28b583f',
+        language: 'en',
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 </body>
 </html>
